@@ -1,54 +1,126 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #171717;
     margin: 0;
     padding: 0;
 }
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
 #container {
-    width: 600px;
-    margin: 20px auto;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    width: 95%;
+    max-width: 1200px;
+    margin: auto;
+    background-color: #212121;
+    border: 1px solid #212121;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
+
+.textarea-container {
+    position: relative;
+}
+
 #input {
-    width: calc(100% - 20px);
-    height: 100px;
+    flex: 1;
+    height: 25px;
     resize: none;
-    margin-bottom: 10px;
     padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+    border: 1px solid #424242;
+    border-radius: 15px;
+    font-size: 16px;
+    background-color: #212121;
+    color: white;
+    width: 1180px;
 }
+
+#input:focus {
+    border-color: #575757;
+    outline: none;
+}
+
+button {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #373737;
+    color: #1E1E1E;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: white;
+}
+
 #output {
-    min-height: 200px;
-    max-height: 300px;
+    max-height: calc(90vh - 200px);
+    min-height: 80vh;
     overflow-y: auto;
 }
+
+@media (max-height: 600px) {
+    #container {
+        height: 90vh;
+    }
+}
+
+@media (max-height: 400px) {
+    #container {
+        height: 80vh;
+    }
+}
+
 .message {
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-    background-color: #f0f0f0;
 }
+
 .user-message {
-    background-color: #5bbddb;
+    background-color: #212121;
+    color: white;
 }
+
 .bot-message {
-    background-color: #5fdb5b;
+    background-color: #212121;
+    color: white;
 }
+
 .message strong {
-    color: #000000;
+    font-weight: bold;
 }
+
 .loading-dots::after {
     content: ".";
     animation: loading 1s infinite steps(4);
 }
+
 @keyframes loading {
-    0% { content: "."; }
-    25% { content: ".."; }
-    50% { content: "..."; }
-    75% { content: ""; }
+    0% {
+        content: ".";
+    }
+
+    25% {
+        content: "..";
+    }
+
+    50% {
+        content: "...";
+    }
+
+    75% {
+        content: "";
+    }
 }
