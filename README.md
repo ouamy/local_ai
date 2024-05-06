@@ -43,7 +43,7 @@ sudo apt upgrade -y
 ```
 ```
 sudo apt install curl
-``
+```
 
 - Install Ollama :
 ```
