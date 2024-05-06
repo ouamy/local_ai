@@ -1,7 +1,6 @@
 # Local AI
 
-Local AI is a project that facilitates local AI interaction by leveraging Ollama and Llama3.
-With this setup, users can access AI capabilities directly from their device via a simple web interface.
+A local AI for enterprise software development.
 
 ## Windows
 
