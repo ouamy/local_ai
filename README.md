@@ -22,7 +22,7 @@ Paste this in your Command Prompt :
 docker run -d -p 3000:8080 --add-host=host.docker.internal:host-gateway -v open-webui:/app/backend/data --name open-webui --restart always ghcr.io/open-webui/open-webui:main
 ```
 
-- Enjoy your Local AI at : http://localhost:3000
+Enjoy your Local AI at : http://localhost:3000
 
 ## WSL/Linux
 
@@ -40,12 +40,12 @@ Run the following commands :
 - sudo apt upgrade -y
 - sudo apt install curl
 
-Install Ollama :
+- Install Ollama :
 ```
 curl -fsSL https://ollama.com/install.sh | sh
 ```
 
-And run the following command :
+- And run the following command :
 ```
 ollama run llama3 install
 ```
